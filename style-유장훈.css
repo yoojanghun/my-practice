@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "normalize.css";
+
+/*component*/
+@import "component/status-bar.css";
+
+/*screen*/
+@import "screen/login.css";
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25em;
+}
