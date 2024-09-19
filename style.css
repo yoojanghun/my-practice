@@ -6,6 +6,7 @@
 @import "component/status-bar.css";
 @import "component/nav-bar.css";
 @import "component/screen-header.css";
+@import "component/user-component.css";
 
 /*screen*/
 @import "screen/login.css";
@@ -19,4 +20,8 @@ body{
 }
 .main{
     padding: 0px var(--horizontal-space);
+}
+
+.font-weight--low{
+    font-weight: 400;
 }
