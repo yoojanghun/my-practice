@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chats</title>
+        <title>Find</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -23,32 +23,74 @@
         </div>
 
         <header class="screen-header">
-            <h1 class="screen-header__title">Friends</h1>
+            <h1 class="screen-header__title">Find</h1>
             <div class="screen-header__icons">
                 <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                <i class="fa-regular fa-comment fa-2x"></i>
-                <i class="fa-solid fa-music fa-2x"></i>
                 <i class="fa-solid fa-gear fa-2x"></i>
             </div>
         </header>
 
         <main class="main">
-            <div class="friend-info">
-                <div class="friend-info__column">
-                    <img
-                        class="friend-info__avatar friend-info__avatar-lg"
-                        src="user.png"
-                    />
-                    <div class="friend-info__text">
-                        <p class="friend-info__title">Janghun</p>
-                        <p class="friend-info__subtitle font-weight--low">
-                        hello nice to meet you
-                        </p>
+            <div class="find-items">
+                <div class="find-items__item">
+                    <div class="find-items__img">
+                        <i class="fa-solid fa-qrcode fa-4x"></i>
+                    </div>
+                    <span>QR Code</span>
+                </div>
+                <div class="find-items__item">
+                    <div class="find-items__img">
+                        <i class="fa-regular fa-address-book fa-4x"></i>
+                    </div>
+                    <span>Add by Contacts</span>
+                </div>
+                <div class="find-items__item">
+                    <div class="find-items__img">
+                        <i class="fa-regular fa-id-badge fa-4x"></i>
+                    </div>
+                    <span>Add by ID</span>
+                </div>
+                <div class="find-items__item">
+                    <div class="find-items__img">
+                        <i class="fa-regular fa-envelope fa-4x"></i>
+                    </div>
+                    <span>Invite</span>
+                </div>
+            </div>
+
+            <div class="recommended-friends">
+                <div class="recommended-friends__title">
+                    Recommended Friends
+                </div>
+                <div class="recommended-friends__state">
+                    You have no recommended friends.
+                </div>
+            </div>
+
+            <div class="open-chat">
+                <div class="open-chat__header">
+                    <div class="open-chat__column">
+                        <span>Open Chat</span>
+                    </div>
+                    <div class="open-chat__column">
+                        <span>Go to Openchat Home</span>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
-                <div class="friend-info__column">
-                    <div class="friend-info__time">21:22</div>
-                    <span class="notification">1</span>
+                <div class="open-post__info">
+                    <div class="open-post__column">
+                        <h3 class="open-post__title">#bts</h3>
+                        <div class="open-post__hashtag">#bts#army#friends</div>
+                        <div class="open-post__state">
+                            <img src="user.png">
+                            <span class="open-post__members">802 members</span>
+                            <div class="divider"></div>
+                            <span class="open-post__active">Active</span>
+                        </div>
+                    </div>
+                    <div class="open-post__column">
+                        <img src="user.png">
+                    </div>
                 </div>
             </div>
         </main>
