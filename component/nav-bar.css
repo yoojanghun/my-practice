@@ -14,14 +14,6 @@
 }
 
 .badge{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #ED5D33;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 0px;
     right: -10px;

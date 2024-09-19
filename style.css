@@ -7,6 +7,7 @@
 @import "component/nav-bar.css";
 @import "component/screen-header.css";
 @import "component/user-component.css";
+@import "component/notification.css";
 
 /*screen*/
 @import "screen/login.css";

@@ -9,10 +9,14 @@
     align-items: center;
 }
 
-.friend-info__column:last-child{
+.friend-info__column:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.friend-info__column:last-child > div{
     opacity: 0.6;
 }
-
 .friend-info__column:last-child i{
     margin-left: 5px;
 }
@@ -37,5 +41,13 @@
 }
 
 .friend-info__title{
-    font-size: 30px;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.friend-info__subtitle{
+    font-size: 25px;
+    opacity: 0.5;
+}
+.friend-info__time{
+    margin-bottom: 10px;
 }

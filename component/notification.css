@@ -1,0 +1,11 @@
+.notification{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ED5D33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
