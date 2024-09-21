@@ -17,12 +17,14 @@
 @import "screen/find.css";
 @import "screen/more.css";
 @import "screen/settings.css";
+@import "screen/chat.css";
 
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.25em;
+    height: 1000vh;
 }
 .main{
     padding: 0px var(--horizontal-space);
