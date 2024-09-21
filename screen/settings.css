@@ -1,3 +1,34 @@
 .settings{
     margin: 30px 0px;
 }
+.settings__info{
+    display: flex;
+    align-items: center;
+    border-bottom: var(--main-border);
+    padding: 20px 0px;
+}
+.settings__info span{
+    font-size: 30px;
+    opacity: 0.6;
+}
+.settings__img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    opacity: 0.7;
+}
+
+.settings__info:last-child{
+    justify-content: space-between;
+}
+
+.settings__info__column{
+    display: flex;
+    align-items: center;
+}
+.settings__info__column:last-child{
+    opacity: 0.4;
+}
