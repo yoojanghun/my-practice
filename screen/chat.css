@@ -4,14 +4,118 @@
 }
 .chat-screen .status-bar{
     background-color: #ABC1D1;
+    z-index: 1;
 }
 .chat-screen .alt-screen-header{
     position: fixed;
     top: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1;
+    background-color: #ABC1D1;
 }
 
 .chat-screen .main-chat{
     margin-top: 180px;
 }
+
+.main-chat .date{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.main-chat .date__info{
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.chat-result__row{
+    display: flex;
+    margin-bottom: 30px;
+}
+.chat-result__row img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.chat-result__name{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    opacity: 0.5;
+}
+.chat-result__text{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-result__text span{
+    display: block;
+    opacity: 0.5;
+    margin: 0px 10px;
+}
+.chat-result__row .chat-result__bubble{
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.chat-result__row:first-child .chat-result__bubble{
+    background-color: white;
+    border-top-left-radius: 0px;
+}
+.chat-result__row:last-child .chat-result__bubble{
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+}
+
+.chat-result__row:last-child .chat-result__text{
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.main-chat .typing{
+    display: flex;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+}
+.typing__column{
+    display: flex;
+    align-items: center;
+}
+.typing__column:first-child{
+    margin: 0px 30px;
+}
+.typing__column:last-child{
+    position: relative;
+}
+.typing__column:last-child i{
+    position: absolute;
+}
+.typing__column:last-child .fa-face-smile{
+    right: 80px;
+}
+.typing__column:last-child .fa-arrow-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    right: 10px;
+    background-color: var(--yellow);
+}
+.typing__column input{
+    border: var(--main-border);
+    height: 50px;
+    width: 85vw;
+    border-radius: 30px;
+    padding: 0px 15px;
+}
+
