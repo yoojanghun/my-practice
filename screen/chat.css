@@ -2,6 +2,8 @@
     background-color: #ABC1D1;
     height: 500vh;
 }
+
+.chat-screen .alt-screen-header,
 .chat-screen .status-bar{
     background-color: #ABC1D1;
     z-index: 1;
@@ -11,8 +13,6 @@
     top: 0;
     width: 100%;
     box-sizing: border-box;
-    z-index: 1;
-    background-color: #ABC1D1;
 }
 
 .chat-screen .main-chat{
@@ -65,12 +65,12 @@
     background-color: white;
     border-top-left-radius: 0px;
 }
-.chat-result__row:last-child .chat-result__bubble{
+.chat-result__row--own .chat-result__bubble{
     background-color: var(--yellow);
     border-top-right-radius: 0px;
 }
 
-.chat-result__row:last-child .chat-result__text{
+.chat-result__row--own .chat-result__text{
     flex-direction: row-reverse;
     width: 100%;
     justify-content: flex-start;
@@ -97,6 +97,7 @@
 }
 .typing__column:last-child i{
     position: absolute;
+    opacity: 0.5;
 }
 .typing__column:last-child .fa-face-smile{
     right: 80px;
